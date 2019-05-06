@@ -1,0 +1,531 @@
+
+
+
+nav {
+  background: #000000;
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  top:0;
+
+}
+nav ul {
+  float: right;
+  list-style-type: none;
+  margin-right: 4rem;
+}
+nav ul li {
+
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a {
+  padding: 10px 30px;
+  text-decoration:none;
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+nav ul li a:hover {
+  background: #fff;
+  color: #000000;
+}
+
+.landingPage
+{ z-index: 200;
+  background: url('./assets/backMain.png');
+  width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 90;
+}
+
+.nameHead {
+  position: absolute;
+  
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+}
+.namefull {
+  flex:1;
+}
+.profile {
+  flex:1;
+}
+.name {
+  color: #ffffff;
+  letter-spacing: 30px;
+  font-weight: 400; }
+
+.job {
+  color: #fff;
+  letter-spacing: 10px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.aboutSec {
+  width: 100%;
+  height: 90vh;
+display: block;
+padding: 3rem;
+}
+.about {
+   display: flex;
+   background: #000000;
+  flex-wrap: wrap;
+  height: 75vh;
+  padding-top: 50px;
+  flex-direction: row-reverse;
+
+}
+.abtPic {
+  flex:0.5;
+text-align: center;
+
+}
+
+.abtInfo {
+  flex:0.5;
+
+}
+.parAbt {
+  margin-left: 5rem;
+  margin-top: 40px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 2.2rem;
+  color: #fff;
+  opacity: .90;
+  font-size: 20px;
+}
+
+
+.main{
+  background: url('./assets/backPara1.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 190vh;
+  z-index: 20;
+}
+
+
+
+.designer, .developer{
+  width: 100%;
+  height: 95vh;
+  display: block;
+  
+}
+.mainDesign {
+  background: rgba(44, 43, 43, 0.95);
+  height: 95vh;
+  width: 50%;
+  float: left;
+  z-index: 30;
+}
+.mainDevelope {
+  background: rgba(255,255,255,0.95);
+  height: 95vh;
+  width: 50%;
+  display: inline-block;
+  float: right;
+  z-index: 30;
+}
+.design,.develope {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+.dHead {
+  color :lightcoral;
+  padding: 20px 20px 0px;
+  font-family: 'Titillium Web', sans-serif;
+font-size: 70px;
+font-weight: 800;
+
+}
+.dPara {
+  padding: 10px 30px 0px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 2.2rem;
+  color: #777;
+  font-size: 20px;
+
+}
+
+
+.techs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 25px;
+  width:100%;
+}
+.mongo {
+flex:1;
+text-align: center;
+}
+.express {
+ flex:1;
+ text-align: center;
+}
+.reactdev {
+flex:1;
+text-align: center;
+}
+.node {
+flex:1;
+text-align: center;
+}
+
+.techImg {
+  height:100px ;
+  width: 100px ;
+}
+.contact {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+.cform {
+margin: 5rem;
+width: 50%;
+float: right;
+}
+.contact-form {
+  bottom: -10%;
+  right: -400px;
+  height: auto;
+  position: fixed;
+  width: 400px;
+  box-shadow: 0 20px 40px rgb(0, 0,0,0.5);
+  background: #ffffff;
+  z-index: 120;
+  box-sizing: border-box;
+  transition: 0.5s;
+  background-image: linear-gradient(
+        to right bottom,
+        #1b0f19,
+        #4b2a44);
+}
+.toggle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  cursor: pointer;
+  background:  	  #660033;
+  line-height: 48px;
+  top: 0;
+  left:-48px;
+
+
+}
+.contact-form form {
+  padding: 30px;
+}
+.contact-form form input,
+.contact-form form textarea
+{
+ width: 100%;
+ height: 35px;
+ padding: 5px;
+ margin-bottom: 10px;
+ box-sizing: border-box;
+ border:  1px solid rgba(0,0,0,0.5);
+ outline: none;
+}
+.contact-form form textarea {
+  height: 60px;
+  resize: none;
+}
+.contact-form form input[type="sumbit"] {
+cursor: pointer;
+border: none;
+font-size: 18px;
+background: yellow;
+color: black;
+
+}
+.contact-form.active {
+  bottom: 10%;
+  right: 0%;
+}
+
+.toggle:before {
+  content: '\f003';
+  font-family: fontAwesome;
+  color: white;
+  font-size: 18px;
+
+}
+.toggle.active:before {
+  content: '\f00d';
+ }
+ .ydone {
+   background-color:#ffd300;
+   height: 300px;
+   width: 100%;
+ }
+ .ydone div {
+   text-align: center;
+   margin:0 189px;
+   padding: 100px 20px;
+ }
+ .pitch {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 40px;
+  color: black;
+ }
+ 
+ .projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+
+ }
+ .prohead {
+   position: sticky;
+   top: 30px;
+   margin-bottom: 10px;
+   z-index: 2;
+ }
+ .ptext {
+   text-align: center;
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 30px;
+   color: #fff;
+ }
+
+.allpro {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  z-index: 1;
+  
+}
+.onep,.twop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.pro {
+  height: 250px;
+  width: 300px;
+  border: 2px solid rgba(59, 55, 55, 1);
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+.pro img {
+  padding: 10px;
+  height: 250px;
+  width: 300px;
+  display: block;
+  border-radius: 10px;
+}
+.overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+}
+.pro:hover .overlay {
+  opacity: 1;
+}
+.textlay {
+  font-size: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.overlayshow {
+  height: 100%;
+  width: 100;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  left: 0;
+}
+.pro:hover .overlayshow {
+  width: 100%;
+}
+
+.social {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  position: relative;
+}
+.ulSo {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.ulSo li {
+  list-style: none;
+}
+a.sicon {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+  color: #000;
+}
+.resume_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.resume_link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media (max-width :600px) {
+  .name {
+    color: #ffffff;
+    letter-spacing: 10px;
+    font-weight: 300; }
+  
+  .job {
+    color: #fff;
+    letter-spacing: 5px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  .developer {
+    height: 100vh;
+  }
+  .mainDesign {
+    width: 100%;
+  }
+  .mainDevelope {
+    width: 100%;
+    height: inherit;
+  
+  }
+  .design,.develope {
+    padding: 0px;
+   
+  
+  }
+  .dHead {
+    color :lightcoral;
+    padding: 20px 20px 0px;
+    font-family: 'Titillium Web', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  
+  }
+  .dPara {
+    font-family: 'Roboto Slab', serif;
+    line-height: none;
+    color: #777;
+    font-size: 15px;
+  
+  }
+  .parAbt {
+    margin-left: 2rem;
+    margin-top: 30px;
+    margin-right: 2rem;
+    font-family: 'Roboto Slab', serif;
+    line-height: none;
+    color: #fff;
+    opacity: .90;
+    font-size: 15px;
+  }
+  .aboutSec {
+    
+    height: inherit;
+
+  padding: 1rem;
+  }
+  .about {
+    height: inherit;
+    padding-top: 30px;
+    flex-direction: column;
+  
+  }
+
+  
+  .techImg {
+    height:150px ;
+    width: 150px ;
+    padding: 10px 10px;
+  }
+  .main{
+    
+    height: inherit;
+    z-index: 20;
+  }
+ 
+  .ydone div {
+    text-align: center;
+    margin:0 20px;
+    padding: 50px 10px;
+  }
+  .pitch {
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 30px;
+   color: black;
+  }
+
+  .projects {
+    height: inherit;
+    }
+   .prohead {
+     position: sticky;
+     top: 30px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+   }
+   .ptext {
+    
+    font-size: 35px;
+    }
+  
+  .allpro {
+    padding: 0;
+    margin: 0 auto;
+    
+  }
+  .pro {
+    height: 250px;
+    width: 300px;
+    margin: 20px 50px;
+    
+  }
+  .pro img {
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+  }
+  
+ }
+ 
+
